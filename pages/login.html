@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Login-Agro</title>
+        <link rel="stylesheet" href="../css/Login.css">
+    </head>
+    <body>
+        <div class="login-container">
+            <h1><a href="../index.html"class="logo">Agro</a></h1>
+            <h2>Sign in or Create Account</h2>
+            <input type="email" id="email" placeholder="Enter Email">
+                <div class="password-box">
+                 <input type="password" id="password" placeholder="Password">
+                    <span onclick="togglePassword()" class="eye">👁️</span>
+                </div>
+            <button class="signin-btn" onclick="login()">Sign in</button>
+            <p class="register-link">
+                New User? <a href="register.html">Create Your Account</a>
+            </p>
+        </div>
+        <script src="../js/auth.js"></script>
+    </body>
+</html>

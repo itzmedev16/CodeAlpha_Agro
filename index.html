@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agro-Online Store</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+      <div id="main-container">
+          <nav>
+            <h1>Agro</h1>
+            <input type="text" placeholder="Search products..." id="search" />
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li><a href="pages/cart.html" class="cart-btn">Cart</a></li>
+                <li id="nav-user"></li>
+            </ul>
+          </nav>
+          <section id="hero">
+            <h2>Welcome to Agro Store</h2>
+            <p>Your one-stop shop for agricultural needs</p>
+        </section>
+        <section id="categories">
+            <h2>Categories</h2>
+            <div class="cat-container">
+                <div class="category" onclick="filterCategory('Seeds')">🌽Seeds</div>
+                <div class="category" onclick="filterCategory('Fertilizers')">🌱Fertilizers</div>
+                <div class="category" onclick="filterCategory('Tools')">🚜Tools</div>
+                <div class="category" onclick="filterCategory('Organic')">🌿Organic Products</div>
+            </div>
+            </section>
+            <select id="sort">
+                <option value="">Sort</option>
+                <option value="low">Low → High</option>
+                <option value="high">High → Low</option>
+            </select>
+            <h2 class="prd">Products</h2>
+             <section id="product-container">
+            </section>
+        </div>
+        <footer>
+            <p>©️ 2026 AGRO Store</p>
+            <p> Contact:agro@gmail.com</p>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>

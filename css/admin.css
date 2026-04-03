@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f1f8e9;
+}
+.admin-nav {
+    background: #2e7d32;
+    color: white;
+    padding: 15px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+}
+.admin-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.form-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.form-section input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+}
+button {
+    padding: 10px;
+    width: 100%;
+    background: #66bb6a;
+    border: none;
+    color: white;
+}
+.product-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+#product-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}.left-section select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+    font-size: 14px;
+}.product-item {
+    background: #f1f8e9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.product-section {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    max-height: 500px;
+    overflow-y: auto;
+}
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#product-count {
+    background: #66bb6a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.product-item {
+    background: #f1f8e9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.product-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

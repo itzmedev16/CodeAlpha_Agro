@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard - AGRO</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <nav class="admin-nav">
+        <h1><a href="../index.html" class="logo">Agro Admin</a></h1>
+    </nav>
+    <div class="admin-container">
+      <div class="form-section">
+        <h2>Add Product</h2>
+        <input type="text" id="pname" placeholder="Product Name">
+        <input type="number" id="price" placeholder="Price">
+            <select id="category">
+                <option value="">Select Category</option>
+                <option value="Seeds">🌾 Seeds</option>
+                <option value="Fertilizers">🌱 Fertilizers</option>
+                <option value="Tools">🚜 Tools</option>
+                <option value="Equipment">🌿 Equipment</option>
+            </select>   
+        <input type="number" id="quantity" placeholder="Quantity">
+            <select id="status">
+                <option value="">Select Status</option>
+                <option value="In Stock">In Stock</option>
+                <option value="Out of Stock">Out of Stock</option>
+            </select>
+        <input type="file" id="image">
+        <button onclick="addProduct()">Add Product</button>
+       </div>
+        <div class="product-section">
+            <div class="product-header">
+            <h2>All Products</h2>
+            <h3>Total Products:<span id="product-count">0</span></h3>
+            </div>
+            <div id="product-list"></div>
+        </div>
+    </div>
+    <script src="../js/admin.js"></script>
+</body>
+</html>
